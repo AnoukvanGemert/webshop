@@ -2,26 +2,12 @@
 // Call this when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded');
-    if (window.location.pathname.includes('cart.html')) {
-        onLoadCartNumbers();
-    }
-    displayCart();
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app/')) {
-        FetchAllCardsData();
-        onLoadCartNumbers();
-    }
-    if (window.location.pathname.includes('admin.html')) {
-        displayOrders();
-    }
-
-
-    if (window.location.pathname.includes('edit-product.html')) {
-        handleProductEdit();
-    }
-
-    if (window.location.pathname.includes('products.html')) {
-        displayProductsAdmin();
-    }
+    onLoadCartNumbers();
+    FetchAllCardsData();
+    onLoadCartNumbers();
+    displayOrders();
+    handleProductEdit();
+    displayProductsAdmin();
 });
 
 let cardData = [];
@@ -340,7 +326,7 @@ function handleProductEdit() {
     currentProductImage.src = product.Image;
 
     const newProductImage = document.getElementById('NewProductImage');
-    
+
 
     document.getElementById('editProductForm').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -408,7 +394,7 @@ async function addNewProduct(e) {
 
     console.log('Product added:', name, cost, imageInput);
 
-    
+
 
     if ((!name || isNaN(cost) || isNaN(power) || isNaN(health) || imageInput.files.length === 0) || (cost <= 0 || power <= 0 || health <= 0)) {
         alert("Please fill out the form correctly!");
