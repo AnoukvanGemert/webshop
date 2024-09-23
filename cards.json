@@ -1,0 +1,60 @@
+[
+    {
+        "Image": "../images/card-images/Adder.webp",
+        "Name": "Adder",
+        "Power": 1,
+        "Health": 1,
+        "Cost": 2,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/Alpha.webp",
+        "Name": "Alpha",
+        "Power": 1,
+        "Health": 2,
+        "Cost": 4,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/Amalgam.webp", 
+        "Name": "Amalgam",
+        "Power": 3,
+        "Health": 3,
+        "Cost": 2,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/Amoeba.webp",
+        "Name": "Amoeba",
+        "Power": 1,
+        "Health": 2,
+        "Cost": 2,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/Ant.webp",
+        "Name": "Worker Ant",
+        "Power": "Ants",
+        "Health": 2,
+        "Cost": 1,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/AntQueen.webp",
+        "Name": "Ant Queen",
+        "Power": "Ants",
+        "Health": 3,
+        "Cost": 1,
+        "inCart": 0
+    },
+    {
+        "Image": "../images/card-images/Glitched_Card.webp",
+        "Name": "01110100 01101000",
+        "Power": "𐠀𐠜𐠍𐠚",
+        "Health": " 𐠃𐠙𐠪𐠒𐠚",
+        "Cost": 14,
+        "inCart": 0
+    }
+
+]
+    

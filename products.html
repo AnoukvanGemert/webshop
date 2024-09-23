@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>admin page</title>
+    <meta name="description" content=" inscryption cards" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="../images/Inscryption_logo_cropped.webp"
+        alt="Inscryption_logo_cropped"
+        class="logo"
+      />
+      <div class="productNav">
+        <a href="admin.html">Orders</a>
+        <a href="products.html">products</a>
+      </div>
+      <span>Welcome Luke!</span>
+    </nav>
+    <div class="products-admin">
+      <div class="editProductheader">
+        <a onclick="resetJson()"><span class="material-symbols-outlined">
+          restart_alt
+          </span></a>
+        <a href="addProduct.html" onclick="addNewProduct()"><span class="material-symbols-outlined">
+          add
+          </span></a>
+      </div>
+      <div class="products-titel">
+      <h3 class="id-admin">Id</h3>
+      <h3 class="name-admin">Name</h3>
+      <h3 class="cost-admin">Cost</h3>
+      <h3 class="img-admin">Image URL</h3>
+      </div>
+      <div>
+      <div class="showProducts"></div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
