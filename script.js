@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         onLoadCartNumbers();
     }
     displayCart();
-    if (window.location.pathname.includes('home.html')) {
+    if (window.location.pathname.includes('https://webshopanouk.netlify.app/')) {
         FetchAllCardsData();
         onLoadCartNumbers();
     }
