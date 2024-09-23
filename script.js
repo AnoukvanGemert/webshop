@@ -2,12 +2,26 @@
 // Call this when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded');
-    onLoadCartNumbers();
-    FetchAllCardsData();
-    onLoadCartNumbers();
-    displayOrders();
-    handleProductEdit();
-    displayProductsAdmin();
+    if (window.location.pathname.includes('cart')) {
+        onLoadCartNumbers();
+    }
+    displayCart();
+    if (window.location.pathname.includes('index')) {
+        FetchAllCardsData();
+        onLoadCartNumbers();
+    }
+    if (window.location.pathname.includes('admin')) {
+        displayOrders();
+    }
+
+
+    if (window.location.pathname.includes('edit-product')) {
+        handleProductEdit();
+    }
+
+    if (window.location.pathname.includes('products')) {
+        displayProductsAdmin();
+    }
 });
 
 let cardData = [];
@@ -182,7 +196,7 @@ function displayCart() {
         </div>
         `
         } else {
-            productContainer.innerHTML += `Did you forget something? <a href="home.html">buy here</a>`
+            productContainer.innerHTML += `Did you forget something? <a href="index.html">buy here</a>`
         }
     }
 }
