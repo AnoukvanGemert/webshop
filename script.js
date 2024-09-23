@@ -2,24 +2,24 @@
 // Call this when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded');
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app/cart')) {
+    if (window.location.pathname.includes('cart.html')) {
         onLoadCartNumbers();
     }
     displayCart();
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app')) {
+    if (window.location.pathname.includes('home.html')) {
         FetchAllCardsData();
         onLoadCartNumbers();
     }
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app/admin')) {
+    if (window.location.pathname.includes('admin.html')) {
         displayOrders();
     }
 
 
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app/edit-product')) {
+    if (window.location.pathname.includes('edit-product.html')) {
         handleProductEdit();
     }
 
-    if (window.location.pathname.includes('https://webshopanouk.netlify.app/products')) {
+    if (window.location.pathname.includes('products.html')) {
         displayProductsAdmin();
     }
 });
