@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         onLoadCartNumbers();
     }
     displayCart();
-    if (window.location.pathname.includes('index')) {
+    if (window.location.pathname.includes('home')) {
         FetchAllCardsData();
         onLoadCartNumbers();
     }
