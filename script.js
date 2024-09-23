@@ -34,7 +34,7 @@ async function FetchAllCardsData() {
             const cardData = JSON.parse(storedCards);
             displayData(cardData);
         } else {
-            const response = await fetch('./cards.json');
+            const response = await fetch('cards.json');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status ${response.status}`);
@@ -381,7 +381,7 @@ function handleProductEdit() {
 
 async function resetJson() {
     try {
-        const response = await fetch('./cards.json');
+        const response = await fetch('cards.json');
 
         if (!response.ok) {
             throw new Error(`HTTP error! status ${response.status}`);
