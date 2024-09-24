@@ -19,5 +19,5 @@ this project is made with:
 - HTML
 - CSS
 - Javascript
-- 
+
 If you have any question about the project feel free to ask those questions :smiley:. You can contact me at my github profile.
